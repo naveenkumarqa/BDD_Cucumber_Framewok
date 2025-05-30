@@ -1,5 +1,7 @@
 package stepDefinitions;
 
+import org.junit.Assert;
+
 import java.io.FileInputStream;
 import java.time.Duration;
 import java.util.Properties;
@@ -70,7 +72,7 @@ public class Steps extends BaseStep {
 	public void user_validates_the_home_page() {
 		DriverUtils.setCurrentMethodName(new Object(){}.getClass().getEnclosingMethod().getName());
 		hp = new HomePage(driver);
-		hp.verifyHomePage();
+		Assert.assertTrue(hp.verifyHomePage());
 	}
 
 	@When("clicks on Practice")
@@ -83,7 +85,7 @@ public class Steps extends BaseStep {
 	public void user_lands_on_the_practice_page() {
 		DriverUtils.setCurrentMethodName(new Object(){}.getClass().getEnclosingMethod().getName());
 		pp = new PracticePage(driver);
-		pp.verifyPracticePage();
+		Assert.assertTrue(pp.verifyPracticePage());
 	}
 
 	@When("User clicks on Test Login")
@@ -96,7 +98,7 @@ public class Steps extends BaseStep {
 	public void user_lands_on_the_test_page() {
 		DriverUtils.setCurrentMethodName(new Object(){}.getClass().getEnclosingMethod().getName());
 		lp = new LoginPage(driver);
-		lp.isLoginPage();
+		Assert.assertTrue(lp.isLoginPage());
 	}
 
 	@When("User navigates to Test URL")
@@ -104,7 +106,7 @@ public class Steps extends BaseStep {
 		DriverUtils.setCurrentMethodName(new Object(){}.getClass().getEnclosingMethod().getName());
 		driver.get(prop.getProperty("test_url"));
 		lp = new LoginPage(driver);
-		lp.isLoginPage();
+		Assert.assertTrue(lp.isLoginPage());
 	}
 
 	@When("User enters valid credentials")
@@ -125,7 +127,7 @@ public class Steps extends BaseStep {
 	public void user_lands_on_the_login_success_page() {
 		DriverUtils.setCurrentMethodName(new Object(){}.getClass().getEnclosingMethod().getName());
 		lbp = new LobbyPage(driver);
-		lbp.isLoginSuccess();
+		Assert.assertTrue(lbp.isLoginSuccess());
 	}
 
 	@When("User clicks on Logout")
@@ -137,7 +139,7 @@ public class Steps extends BaseStep {
 	@Then("User is logged out successfully")
 	public void user_is_logged_out_successfully() {
 		DriverUtils.setCurrentMethodName(new Object(){}.getClass().getEnclosingMethod().getName());
-		lp.isLoginPage();
+		Assert.assertTrue(lp.isLoginPage());
 	}
 
 	@AfterStep
