@@ -1,3 +1,3 @@
-15:22:06 [main] INFO  stepDefinitions.Steps - Step: user_enters_valid_credentials
-15:22:07 [main] INFO  stepDefinitions.Steps - Step: clicks_on_submit
-15:22:07 [main] INFO  stepDefinitions.Steps - Step: user_lands_on_the_login_success_page
+17:25:37 [main] INFO  stepDefinitions.Steps - Step: user_enters_valid_credentials
+17:25:37 [main] INFO  stepDefinitions.Steps - Step: clicks_on_submit
+17:25:38 [main] INFO  stepDefinitions.Steps - Step: user_lands_on_the_login_success_page
