@@ -14,7 +14,8 @@ import io.cucumber.junit.CucumberOptions;
 		tags= "@Smoke",
 		plugin= {
 				"pretty",
-				"html:reports/cucumber-report.html",  
+				"html:reports/cucumber-report.html",
+				"json:reports/cucumber-report.json"
 		}
 		)
 
