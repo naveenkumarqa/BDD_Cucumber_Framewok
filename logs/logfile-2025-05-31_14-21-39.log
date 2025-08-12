@@ -1,0 +1,14 @@
+15:20:57 [main] INFO  stepDefinitions.Steps - Step: user_enters_valid_credentials
+15:20:58 [main] INFO  stepDefinitions.Steps - Step: clicks_on_submit
+15:20:58 [main] INFO  stepDefinitions.Steps - Step: user_lands_on_the_login_success_page
+15:22:55 [main] INFO  stepDefinitions.Steps - Driver initiated
+15:22:55 [main] INFO  stepDefinitions.Steps - Step: user_launches_the_browser
+15:22:58 [main] INFO  stepDefinitions.Steps - Step: navigates_to_the_application_url
+15:22:59 [main] INFO  stepDefinitions.Steps - Step: user_navigates_to_test_url
+21:31:16 [main] INFO  stepDefinitions.Steps - Driver initiated
+21:31:16 [main] INFO  stepDefinitions.Steps - Step: user_launches_the_browser
+21:31:21 [main] INFO  stepDefinitions.Steps - Step: navigates_to_the_application_url
+21:31:21 [main] INFO  stepDefinitions.Steps - Step: user_navigates_to_test_url
+21:31:22 [main] INFO  stepDefinitions.Steps - Step: user_enters_valid_credentials
+21:31:23 [main] INFO  stepDefinitions.Steps - Step: clicks_on_submit
+21:31:23 [main] INFO  stepDefinitions.Steps - Step: user_lands_on_the_login_success_page

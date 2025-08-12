@@ -1,16 +1,8 @@
 package stepDefinitions;
 
 import org.junit.Assert;
-
-import java.io.FileInputStream;
-import java.time.Duration;
-import java.util.Properties;
-
-import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
 
@@ -31,28 +23,7 @@ public class Steps extends BaseStep {
 
 	@Before
 	public void setUp(Scenario scenario) throws Exception {
-
-		//property file
-		prop = new Properties();
-		FileInputStream file = new FileInputStream("src/test/resources/config.properties");
-		prop.load(file);
-
-		//logger file
-		logger = LogManager.getLogger(Steps.class.getName());
-
-		//extent report
-		extest = DriverUtils.getExtentReports().createTest(scenario.getName());
-
-		//driver
-		if(prop.getProperty("browser").equalsIgnoreCase("Chrome")) {
-			driver = new ChromeDriver();
-			logger.info("Driver initiated");
-		} else {
-			throw new IllegalArgumentException("Unsupported browser: " + prop.getProperty("browser"));
-		}
-
-		//wait
-		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		initSetup(scenario);
 	}
 
 
