@@ -1,0 +1,11 @@
+15:59:47 [main] INFO  stepDefinitions.Steps - Browser launched and maximized
+15:59:49 [main] INFO  stepDefinitions.Steps - Navigated to application URL: https://practicetestautomation.com/
+15:59:50 [main] INFO  stepDefinitions.Steps - Navigated to Test URL: https://practicetestautomation.com/practice-test-login/
+15:59:50 [main] INFO  stepDefinitions.Steps - Entered credentials: username=student password=******
+15:59:51 [main] INFO  stepDefinitions.Steps - Clicked Submit button
+15:59:52 [main] INFO  stepDefinitions.Steps - Login Success page verified
+16:09:01 [main] INFO  stepDefinitions.Steps - Browser launched and maximized
+16:09:04 [main] INFO  stepDefinitions.Steps - Navigated to application URL: https://practicetestautomation.com/
+16:09:05 [main] INFO  stepDefinitions.Steps - Navigated to Test URL: https://practicetestautomation.com/practice-test-login/
+16:09:06 [main] INFO  stepDefinitions.Steps - Entered credentials: username=student password=******
+16:09:08 [main] INFO  stepDefinitions.Steps - Clicked Submit button
