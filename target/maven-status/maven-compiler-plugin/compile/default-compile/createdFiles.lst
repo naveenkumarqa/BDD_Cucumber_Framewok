@@ -1,1 +1,8 @@
-BDD_Cucumber_Project\BDD_Cucumber_Project\App.class
+pageObjects\LobbyPage.class
+driver\DriverFactory.class
+pageObjects\PracticePage.class
+utils\ReportManager.class
+config\ConfigLoader.class
+pageObjects\LoginPage.class
+pageObjects\HomePage.class
+utils\DriverUtils.class
