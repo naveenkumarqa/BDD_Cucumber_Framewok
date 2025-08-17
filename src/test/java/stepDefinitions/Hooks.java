@@ -22,7 +22,6 @@ public class Hooks {
         // Initialize driver using default config inside DriverFactory
         DriverFactory.initDriver();
         
-
         // Determine category
         CucumberOptions opts = TestRun.class.getAnnotation(CucumberOptions.class);
         if (opts != null && opts.tags().length() > 0) {
